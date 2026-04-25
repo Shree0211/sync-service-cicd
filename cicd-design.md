@@ -39,3 +39,21 @@ Environment Mapping
 - Production stage -> Manual approval is required by internal/production team
 
 ----------------------------------------------------------------------------------------------
+
+* Configuration Management
+
+Environment-specific configurations are maintained here.
+Spring profiles:
+
+- application-qa.yml
+- application-staging.yml
+- application-prod.yml
+
+Deployment activates profiles using sping.profiles.active=<env>
+
+* Secrets Management
+
+- Sensitive data such as MongoDB credentials and API keys are not stored in Git.
+- Secrets are stored securely in Jenkins Credentials Manager or Google Secret Manager.
+
+----------------------------------------------------------------------------------------------
