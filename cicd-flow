@@ -1,0 +1,20 @@
+Developer
+   |
+   v
+Feature Branch
+   |
+   v
+Pull Request
+   |
+   v
+------ CI ------
+Build + Test
+   |
+   v
+Merge Approved
+   |
+   v
+------ CD ------
+develop → QA
+staging → Staging
+main → Approval → Production
