@@ -57,3 +57,13 @@ Deployment activates profiles using sping.profiles.active=<env>
 - Secrets are stored securely in Jenkins Credentials Manager or Google Secret Manager.
 
 ----------------------------------------------------------------------------------------------
+
+* Deployment Strategy
+
+- Rolling deployment strategy is selected for this system. It provides minimal downtime, controlled rollout and cost efficiency while maintaining service availabity during updates.
+
+- Blue/Green Deployment is selected in second priority. Blue/Green deployments provide zero downtime but require duplicate infra and increasing cost for startup environment.
+
+- Recreate deployments introduce downtime and are not suitable for production APIs.
+
+----------------------------------------------------------------------------------------------
